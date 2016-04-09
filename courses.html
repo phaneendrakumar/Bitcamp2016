@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"><link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="./js/js.js"></script>
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/seniors.css">
 <script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900'
 	rel='stylesheet' type='text/css'>
@@ -21,9 +22,37 @@
 	    <a href="#">Log Out</a>
 	 </div>
 	<div class="container">
-		<div class="welcome">Howdy there!!!!!!!!</div>	<!-- TO-DO add user name from php -->
+	<form onsubmit="return false"> <!-- TODO php validation -->
+	  <div class="col-2">
+	    <label>
+	      Role
+	      <select id="name" name="name" tabindex="1">
+	      	<option value="soft">Software Dev</option>
+	      	<option value="soft">UI Designer</option>
+	      </select>
+	     </label>
+	  </div>
+	  <div class="col-2">
+	    <label>
+	      Company
+	      <input placeholder="Which company you are aspiring for?" id="company" name="company" tabindex="2">
+	    </label>
+	  </div>
+	  
+	  <div class="col-2">
+	    <label>
+	      Yrs Experience
+	      <input placeholder="How many years of experience?" id="experience" name="experience" tabindex="7">
+	    </label>
+	  </div>
+	  	  
+	  <div class="col-submit">
+	    <button class="submitbtn">Submit Form</button>
+	  </div>
+	  
+	  </form>	
 	</div>
-	<div class="name">Add your course from the list</div>
+	
 </div>	
 </body>
 </html>
