@@ -1,0 +1,257 @@
+canvas {
+  background: #023;
+  display: block; 
+}
+header, nav, ul{
+	position:relative;
+}
+body{
+	font-family: Lato;
+	margin :0;
+	padding:0;
+}
+header {
+    padding-top: 30px;
+}
+header nav ul li{
+	text-align:center;
+}
+header nav ul {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    list-style-type: none;
+    padding: 0 0 30px;
+    text-transform: uppercase;
+    width: 100%;
+    justify-content: space-around;  
+}
+header nav ul li a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: all 0.5s cubic-bezier(0.745, 0.045, 0.355, 1) 
+    }
+h3{
+	position:relative;
+}
+form {
+  padding: 20px 0;
+  position: relative;
+  z-index: 2;
+}
+form input,select, select option  {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 250px;
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: #000000;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  font-weight: 300;
+}
+.areYou{
+	font-size:18px;
+	color:rgba(255, 255, 255, 0.5);
+}
+select{
+	color: rgba(255, 255, 255, 0.5);
+	text-indent: 45px;
+}
+form input:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+form input:focus {
+  background-color: white;
+  width: 300px;
+  color: #53e3a6;
+}
+form button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;
+  background-color: green;
+  border: 0;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 3px;
+  width: 250px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+}
+form button:hover {
+  background-color: #f5f7f9;
+  color: green;
+}
+.margin-top{
+	margin-top:100px;
+	color: white;
+}
+#content{
+	position:relative;
+}
+.active{
+	color:#EEFF6A;
+}
+.name{
+	font-family: Lato;
+	font-size: 25px;
+	position:realtive;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	font-weight: 700;
+	margin-top:200px;
+	letter-spacing:11px;
+}
+.welcome{
+	font-family: Lato;
+	font-size: 15px;
+	position:realtive;
+	margin-top:30px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #9BEC1C;
+	font-weight: 500;
+	letter-spacing:11px;
+}
+
+.iPhone{
+	width:45%;
+}
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
+.iPhone:hover{
+	-webkit-filter:none;
+	filter:none;
+}
+
+.iPhone:hover ~ .iPhoneText{
+	-webkit-filter:none;
+	filter:none;
+}
+.iPhoneText{
+	text-align: left;
+	color: #9BEC1C;
+	display:inline-block;
+	margin-top:20px;
+	vertical-align:top;
+	font-family:Lato;
+	font-size:1.4em;
+	opacity: 0.7;
+	transition: all 1s;
+	filter:grayscale(100%);
+}
+.iPhoneText:hover{
+	-webkit-filter:none;
+	filter:none;
+}
+ .iPhoneText:hover + .iPhone{
+	-webkit-filter:none;
+	filter:none;
+}
+.att{
+	max-width: 160px;
+	max-height: 130px;
+	margin-right:50px;
+	margin-bottom:100px;
+	opacity: 0.7;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+.att:hover{
+	-webkit-filter:none;
+	filter:none;
+}
+.dna{
+	max-width: 160px;
+	max-height: 130px;
+	margin-right:110px;
+	margin-bottom:100px;
+	opacity: 0.7;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+.align-center{
+	text-align:center;
+	margin-bottom:25px;
+}
+
+.bopisText{
+	color: white;
+}
+.bopis{
+	max-width: 190px;
+	max-height: 130px;
+	height:100%;
+	width:100%;
+}
+.imageDiv{
+	display:inline;
+}
+/* check the swivel effect */
+.swivel{
+	animation-name: swivel;
+	-webkit-animation-name: swivel;	
+
+	animation-duration: 2.5s;	
+	-webkit-animation-duration: 2.5s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	border-radius: 150px;
+}
+
+@keyframes swivel {
+	0% {
+		transform: rotate(-4deg);	
+	}
+	50% {
+		transform: rotate(4deg);
+	}
+	100% {
+		transform: rotate(-4deg);	
+	}						
+}
+
+@-webkit-keyframes swivel {
+	0% {
+		-webkit-transform: rotate(-4deg);	
+	}
+	50% {
+		-webkit-transform: rotate(4deg);
+	}
+	100% {
+		-webkit-transform: rotate(-4deg);	
+	}				
+}
+.self{
+	text-align:center;
+	margin-top:50px;
+}
+.self-content{
+	font-family: Lato;
+	color:white;
+	width:100%;
+	font-size:22px;
+	font-weight:300;
+}
+.button-holder{
+	text-align:center;
+}
+#register-form{
+	display:none;
+}
