@@ -46,6 +46,10 @@ h1 {
 }
 
 
+option{
+	font-size: 14px !important;
+}
+
 /** form field **/
 form {
   display: block;
@@ -175,4 +179,14 @@ button.submitbtn:active {
   .col-2 { width: 100% }
    
   .col-submit button { width: 30%; margin: 0 auto; }
+}
+.results{
+	font-size:14px;
+	text-align:center;
+	margin-top:5%;
+	display:none;
+}
+.resultshead{
+	font-size:27px;
+	font-family:Lato;
 }
