@@ -12,6 +12,14 @@
 <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
 </head>
 <body>
+<style>
+.nullify{
+	background: none !important;
+	border: none !important;
+	margin: 0 !important;
+	width: auto !important;
+}
+</style>
 <div class="container-fluid FFEBCD">
 	<nav class="navbar navbar-inverse nav">
 		<a href="#" id="profileID"><img class="profileTop" src="images/dummy.png"></a>
@@ -24,8 +32,10 @@
 		<div class="profileContent">
 			<span><img class="imageProfile profile" src="images/casino-online.jpg">	</span>
 			<span class="profileName">Unknown Guy</span><!-- TODO Fetch from DB --><br /><br /><br />
+			<form id="addCourse" class="nullify" action="" method="">
 			<span class="courseAdd">Please add your courses:&nbsp;&nbsp;&nbsp;</span>	
-				<span class="course"><label><input class="courseInput" type="text" placeholder="Course Code" tabindex="1"/> </label></span><button style="width:50px;">Add</button>
+				<span class="course"><label><input class="courseInput" type="text" placeholder="Course Code" tabindex="1"/> </label></span><button style="width:75px;">Add</button>
+			</form>
 			<div class="row courseAdd">
 	        <div class="panel panel-primary filterable">
 	            <div class="panel-heading">
