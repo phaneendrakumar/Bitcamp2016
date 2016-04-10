@@ -57,10 +57,10 @@ form input,select, select option  {
   display: block;
   text-align: center;
   font-size: 18px;
-  color: #000000;
+  color: white;
   -webkit-transition-duration: 0.25s;
           transition-duration: 0.25s;
-  font-weight: 300;
+  font-weight: 500;
 }
 .areYou{
 	font-size:18px;
