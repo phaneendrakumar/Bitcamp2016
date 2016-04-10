@@ -22,6 +22,7 @@
 	    <a href="#">Log Out</a>
 	 </div>
 	<div class="container">
+	<div class="back" onclick="goBack();">Back</div>
 	<form onsubmit="return false"> <!-- TODO php validation -->
 	  <div class="col-2">
 	    <label>
@@ -92,7 +93,12 @@
 	  </section>
 	</div>
 	
-</div>	
+</div>
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
 </body>
 </html>
 
