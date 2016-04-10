@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Apr 10, 2016 at 01:11 AM
+-- Generation Time: Apr 10, 2016 at 03:02 PM
 -- Server version: 5.6.26
 -- PHP Version: 5.5.28
 
@@ -36,17 +36,17 @@ CREATE TABLE IF NOT EXISTS `course` (
 --
 
 INSERT INTO `course` (`course_id`, `description`) VALUES
-('INFM 700', 'Information Architecture'),
-('INFM 750', 'From Data to Insights'),
-('INFM 714', 'Information for Decision-Making'),
-('INST 737', 'Digging Into Data'),
-('INFM 747', 'Web-Enabled Databases'),
-('INFM 757', 'Organizational and Business Process Modeling'),
-('INFM 714', 'Principles of Competitive Intelligence'),
-('INFM 743', 'Development of Internet Applications'),
-('INST 603', 'Systems Design and Analysis'),
-('INST 706', 'Project Management'),
-('INST 733', 'Database Design');
+('INFM700', 'Information Architecture'),
+('INFM750', 'From Data to Insights'),
+('INFM714', 'Information for Decision-Making'),
+('INST737', 'Digging Into Data'),
+('INFM747', 'Web-Enabled Databases'),
+('INFM757', 'Organizational and Business Process Modeling'),
+('INFM714', 'Principles of Competitive Intelligence'),
+('INFM743', 'Development of Internet Applications'),
+('INST603', 'Systems Design and Analysis'),
+('INST706', 'Project Management'),
+('INST733', 'Database Design');
 
 -- --------------------------------------------------------
 
@@ -94,9 +94,20 @@ CREATE TABLE IF NOT EXISTS `User` (
 --
 
 INSERT INTO `User` (`first_name`, `last_name`, `email_id`, `password`, `year_grad`, `username`, `status`) VALUES
+('Sneha', 'm', 'sneha', '', 0, '', 0),
+('Aditya', 'Bhat', 'adi@umd.edu', '1234', 1, 'aditya_b', 0),
 ('Aditya', 'Bhat', 'adi@umd.edu', '1234', 1, 'aditya_rb', 0),
+('Akshay', 'Mandake', 'aksh@umd.edu', 'aksh', 2014, 'aksh', 0),
+('Anuj', 'Shah', 'anuj@umd.edu', 'anuj', 2014, 'anuj', 0),
+('Ashwin', 'SL', 'ashwin@umd.edu', 'ashwin', 2013, 'ashwin', 0),
 ('Gavish', 'Gav', 'gavish@umd.edu', '1234', 1, 'gavish', 0),
-('phaneendra', 'namala', 'phani@umd.edu', '123456', 1, 'phaneendra_n', 1);
+('Gavish', 'Gav', 'gavish@umd.edu', '1234', 1, 'gavishg', 0),
+('phaneendra', 'namala', 'phani@umd.edu', '123456', 1, 'phaneendra_n', 1),
+('Raju', 'V', 'raju@umd.edu', 'raju', 2013, 'raju', 0),
+('Raveesh', 'Mayya', 'rmb@umd.edu', 'rav', 2014, 'rav', 0),
+('Rithesh', 'S', 'rithesh@umd.edu', 'rit', 2013, 'rit', 0),
+('Sneha', 'm', 'sneha@umd.edu', 'sneha', 2014, 'sneha', 0),
+('Sughosh', 'v', 'sug@umd.edu', 'sug', 2013, 'sug', 0);
 
 -- --------------------------------------------------------
 
@@ -109,24 +120,34 @@ CREATE TABLE IF NOT EXISTS `user_academia` (
   `experience` int(50) NOT NULL,
   `company` varchar(50) NOT NULL,
   `role` varchar(50) NOT NULL,
-  `INST 706` bit(1) NOT NULL,
-  `INFM 700` bit(1) NOT NULL,
-  `INFM 750` bit(1) NOT NULL,
-  `INFM 714` bit(1) NOT NULL,
-  `INST 737` bit(1) NOT NULL,
-  `INST 747` bit(1) NOT NULL,
-  `INFM 757` bit(1) NOT NULL,
-  `INFM 733` bit(1) NOT NULL,
-  `INFM 743` bit(1) NOT NULL,
-  `INFM 603` bit(1) NOT NULL
+  `INST706` bit(1) NOT NULL,
+  `INFM700` bit(1) NOT NULL,
+  `INFM750` bit(1) NOT NULL,
+  `INFM714` bit(1) NOT NULL,
+  `INST737` bit(1) NOT NULL,
+  `INST747` bit(1) NOT NULL,
+  `INFM757` bit(1) NOT NULL,
+  `INFM733` bit(1) NOT NULL,
+  `INFM743` bit(1) NOT NULL,
+  `INFM603` bit(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `user_academia`
 --
 
-INSERT INTO `user_academia` (`user_name`, `experience`, `company`, `role`, `INST 706`, `INFM 700`, `INFM 750`, `INFM 714`, `INST 737`, `INST 747`, `INFM 757`, `INFM 733`, `INFM 743`, `INFM 603`) VALUES
-('phaneendra_n', 4, 'xyz', 'Data Analyst', b'1', b'1', b'0', b'0', b'1', b'1', b'0', b'0', b'1', b'1');
+INSERT INTO `user_academia` (`user_name`, `experience`, `company`, `role`, `INST706`, `INFM700`, `INFM750`, `INFM714`, `INST737`, `INST747`, `INFM757`, `INFM733`, `INFM743`, `INFM603`) VALUES
+('gavish', 4, 'Accenture', 'Web Developer', b'1', b'1', b'0', b'0', b'0', b'0', b'1', b'1', b'1', b'0'),
+('aditya_rb', 0, 'Microsoft', 'Data Scientist', b'0', b'0', b'0', b'0', b'1', b'1', b'1', b'1', b'1', b'0'),
+('aksh', 2, 'EY', 'Data Scientist', b'0', b'0', b'0', b'0', b'1', b'1', b'1', b'1', b'1', b'0'),
+('anuj', 2, 'EY', 'Web Developer', b'1', b'1', b'1', b'0', b'0', b'0', b'0', b'1', b'1', b'0'),
+('ashwin', 3, 'Microsoft', 'Data Scientist', b'0', b'0', b'0', b'0', b'1', b'1', b'1', b'1', b'1', b'0'),
+('raju', 0, 'Cummins', 'Web Developer', b'0', b'1', b'1', b'1', b'0', b'0', b'0', b'0', b'1', b'1'),
+('rav', 4, 'EY', 'Data Scientist', b'0', b'0', b'1', b'0', b'1', b'1', b'0', b'1', b'1', b'0'),
+('rit', 0, 'Microsoft', 'Web Developer', b'0', b'0', b'1', b'0', b'0', b'1', b'1', b'1', b'1', b'0'),
+('sneha', 3, 'Accenture', 'Data Scientist', b'1', b'0', b'0', b'0', b'1', b'1', b'1', b'1', b'0', b'0'),
+('sug', 0, 'AIR', 'Web Developer', b'0', b'1', b'1', b'0', b'0', b'0', b'0', b'1', b'1', b'1'),
+('phaneendra_n', 4, 'Infosys', 'software Developer', b'1', b'1', b'1', b'0', b'1', b'1', b'0', b'1', b'1', b'1');
 
 --
 -- Indexes for dumped tables
