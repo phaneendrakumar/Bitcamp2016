@@ -14,7 +14,7 @@
 <body>
 <div class="container-fluid FFEBCD">
 	<nav class="navbar navbar-inverse nav">
-		<a href="#" id="profileID"><img class="profile" src="images/casino-online.jpg"></a>
+		<a href="#" id="profileID"><img class="profileTop" src="images/dummy.png"></a>
 	</nav>
 	<div id="myDropdown" class="dropdown-content">
 	    <a href="#">My Profile</a>
@@ -22,11 +22,31 @@
 	 </div>
 	<div class="container">
 		<div class="profileContent">
-			<img class="imageProfile profile" src="images/casino-online.jpg">	
-			<span class="profileName">Unknown Guy</span><!-- TODO Fetch from DB -->
-			<div class="course">
-				<input type="text" placeholder="Course Code" tabindex="1"/> <button style="width:50px;">Add</button>
-			</div>
+			<span><img class="imageProfile profile" src="images/casino-online.jpg">	</span>
+			<span class="profileName">Unknown Guy</span><!-- TODO Fetch from DB --><br /><br /><br />
+			<span class="courseAdd">Please add your courses:&nbsp;&nbsp;&nbsp;</span>	
+				<span class="course"><label><input class="courseInput" type="text" placeholder="Course Code" tabindex="1"/> </label></span><button style="width:50px;">Add</button>
+			<div class="row courseAdd">
+	        <div class="panel panel-primary filterable">
+	            <div class="panel-heading">
+	                <h3 class="panel-title">Registered Courses</h3>
+	            </div>
+	            <table class="table">
+	                <thead>
+	                    <tr class="filters">
+	                        <th>Subject Code</th>
+	                        <th>Subject Name</th>
+	                    </tr>
+	                </thead>
+	                <tbody>
+	                    <tr>
+	                        <td>INFM 743</td>
+	                        <td>Development of internet applications</td>
+	                    </tr>
+	                </tbody>
+	            </table>
+	        </div>
+	  	</div> 
 		</div>
 	</div>
 </div>
