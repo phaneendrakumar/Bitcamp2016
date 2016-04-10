@@ -20,7 +20,7 @@ The second part of the application helps in determining a course plan that a stu
 Database – MySql
 Languages used – HTML5, CSS3, JS, jQuery and PHP
 Challenges we ran into
-We had planned to implement a machine learning algorithm to come up with a course plan using R. we were unable to run R script on a webpage and integrate JS and PHP objects with R script. SO we decided not to work with R very late in our development.
+We had planned to implement a machine learning algorithm to come up with a course plan using R. we were unable to run R script on a webpage and integrate JS and PHP objects with R script. So we decided not to work with R very late in our development.
 
 --------------------------
 #What’s Next for our app
