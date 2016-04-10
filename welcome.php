@@ -3,9 +3,9 @@
 
 if(session_id() == '' || !isset($_SESSION)){session_start();}
 
-if(isset($_SESSION["username"])){
+if(!isset($_SESSION["username"])){
 
-        header("location:index.php");
+     header("location:index.php");
 }
 
 ?>
@@ -50,10 +50,10 @@ canvas {
     </form>
     
     <form class="form" id="register-form" method="POST" action="insert.php">
-    <input type="text" placeholder="First Name" name="first_name">
+     <input type="text" placeholder="First Name" name="first_name">
       <input type="text" placeholder="Last Name" name="last_name">
       <div class="button-holder">
-      <span class="areYou">Are you a:</span> 
+     <!-- <span class="areYou">Are you a:</span> -->
       <select name="status">
         <option value="1">Current Student</option>
         <option value="0">Alumni</option>
@@ -62,7 +62,7 @@ canvas {
       <input type="text" placeholder="Username" name="username">
       <input type="password" placeholder="Password" name="pwd">
       <input type="text" placeholder="email id" name="email_id">
-      <input type="text" placeholder="year of graduation" name="year_grad">
+      <input type="date" placeholder="year of graduation" name="year_grad">
       <div class="button-holder">
         <button type="submit">Register</button>
       </div>

@@ -5,8 +5,9 @@ if(session_id() == '' || !isset($_SESSION)){session_start();}
 
 if(!isset($_SESSION["username"])){
 
-    header("location:index.php");
+     header("location:index.php");
 }
+
 include 'config.php';
 ?>
 
@@ -84,12 +85,6 @@ include 'config.php';
 	      </select>
 	     </label>
 	  </div>
-	  <div class="col-2">
-	    <label>
-	      Company
-	      <input placeholder="Which company you are aspiring for?" id="company" name="company" tabindex="2">
-	    </label>
-	  </div>
 	  
 	  <div class="col-2">
 	    <label>
@@ -99,7 +94,7 @@ include 'config.php';
 	  </div>
 	  	  
 	  <div class="col-submit">
-	    <button type="submit" name="go">Submit</button>
+	    <button type="submit" name="go">Plan</button>
 	  </div>
 	  
 	  </form>	
@@ -128,19 +123,25 @@ $role = $_POST['role'];
 	  	<div class="row">
         <div class="panel panel-primary filterable">
             <div class="panel-heading">
-                <h3 class="panel-title">Seniors</h3>
+                <h3 class="panel-title">Course Plan</h3>
             </div>
             <table class="table">
                 <thead>
                 <b>    <tr class="filters">
                   
-                        <th>FIRST NAME</th>
-                        <th>LAST NAME</th>
-                        <th>EMAIL ID</th>
-                        <th>COMPANY</th>
-                        <th>EXPERIENCE</th>
+                        <th>COURSE ID</th>
+                        <th>COURSE NAME</th>
+                        
 
                     </tr> </b>
+                    <tr>
+	                    <td>INFM700</td>
+	                    	<td>Information Architecture</td>
+	                    	</tr>
+	                    	<tr>
+	                    		<td>INFM747</td>
+	                    		<td>Web Enabled Databases</td>
+	                    	</tr>
                 </thead>
                 <tbody>
 
